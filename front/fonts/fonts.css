@@ -1,0 +1,22 @@
+@font-face{
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Playwrite';
+    src: url('PlaywriteAUVIC-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'Poppins-bold';
+    src: url('Poppins-Bold.ttf') format('truetype');
+}

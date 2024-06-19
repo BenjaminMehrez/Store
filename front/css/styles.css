@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Montserrat';
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+img{
+    width: 500px;
+}
+
+
+.container{
+    width: clamp(600px,70vw,1400px);
+}
+
+/* -------- HEADER -------- */
+
+
+header{
+    display: flex;
+    height: 90px;
+    background-color: #DFDFE2;
+    font-family: 'Poppins';
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header-title{
+    font-family: 'Playwrite';
+}
+
+.nav-list{
+    display: flex;
+    gap: 25px;
+}
+
+
+/* --------- Product Details --------- */
+
+.section-card{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    height: 80dvh;
+}
+
+.card{
+    display: flex;
+    margin: auto;
+    margin-right: 250px;
+    position: relative;
+    overflow: visible;
+}
+
+.img-product{
+    position: absolute;
+    top: -50px; 
+    left: -500px; 
+    z-index: 1;
+    box-shadow:
+    0px 0px 0.2px rgba(0, 0, 0, 0.056),
+    0px 0px 0.4px rgba(0, 0, 0, 0.081),
+    0px 0px 0.8px rgba(0, 0, 0, 0.1),
+    0px 0px 1.3px rgba(0, 0, 0, 0.119),
+    0px 0px 2.5px rgba(0, 0, 0, 0.144),
+    0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.detail-product{
+    padding: 70px 40px;
+    box-shadow:
+    1.4px 0.3px 2.2px rgba(0, 0, 0, 0.028),
+    3.4px 0.8px 5.3px rgba(0, 0, 0, 0.04),
+    6.4px 1.5px 9.9px rgba(0, 0, 0, 0.05),
+    11.4px 2.7px 17.6px rgba(0, 0, 0, 0.06),
+    21.3px 5px 33px rgba(0, 0, 0, 0.072),
+    51px 12px 79px rgba(0, 0, 0, 0.1);
+}
+
+.title-product{
+    font-family: 'Poppins-bold';
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.price-product{
+    font-family: 'Poppins-bold';
+    font-size: 1.5rem;
+    color: #222;
+    padding: 30px 0;
+}
+
+.description-product{
+    font-size: large;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.add-product{
+    font-family: 'Poppins';
+    width: 200px;
+    height: 40px;
+    background-color: #333;
+    color: #fff;
+    border: 0;
+}
