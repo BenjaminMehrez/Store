@@ -6,7 +6,11 @@
 
 
 body{
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
+}
+
+:root{
+    --color: #222
 }
 
 
@@ -36,7 +40,6 @@ header{
     display: flex;
     height: 90px;
     background-color: #DFDFE2;
-    font-family: 'Poppins';
 }
 
 .header{
@@ -56,16 +59,16 @@ header{
 }
 
 
-/* --------- Product Details --------- */
+/* ------------- SECTION DETAIL --------------- */
 
-.section-card{
+.section-card-detail{
     display: flex;
     margin: auto;
     align-items: center;
     height: 80dvh;
 }
 
-.card{
+.card-detail{
     display: flex;
     margin: auto;
     margin-right: 250px;
@@ -101,13 +104,13 @@ header{
 .title-product{
     font-family: 'Poppins-bold';
     font-size: 2.5rem;
-    color: #222;
+    color: var(--color);
 }
 
 .price-product{
     font-family: 'Poppins-bold';
     font-size: 1.5rem;
-    color: #222;
+    color: var(--color);
     padding: 30px 0;
 }
 
@@ -118,10 +121,15 @@ header{
 }
 
 .add-product{
-    font-family: 'Poppins';
     width: 200px;
     height: 40px;
     background-color: #333;
     color: #fff;
     border: 0;
 }
+
+.atras{
+    font-size: 50px;
+}
+
+

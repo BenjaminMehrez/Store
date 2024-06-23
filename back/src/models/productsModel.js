@@ -1,4 +1,3 @@
-// import products from '../../product.json' assert {type: 'json'}
 import {connectToMongoDB, disconnetToMongoDB} from '../config/config.js'
 
 class ProductsModel{
@@ -10,11 +9,26 @@ class ProductsModel{
             }
             const result = await clientMongo.db('store').collection('products').find().toArray()
             await disconnetToMongoDB()
-            console.log(result);
             if (!result) return {products:null, error:true}
             return {products:result, error:false}
         } catch (error) {
-            return error
+            return {products: null, error}
+        }
+    }
+
+    static async getById(id){
+        try {
+            const clientMongo = await connectToMongoDB()
+            if (!clientMongo) {
+                throw Error('Error al conectar con MongoDb')
+            }
+            const result = await clientMongo.db('store').collection('products').findOne({id: Number(id)})
+            await disconnetToMongoDB()
+            if (!result) return {products:null, error:true}
+            return {products:result, error:false}
+
+        } catch (error) {
+            return {products: null, error}
         }
     }
 }

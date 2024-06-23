@@ -10,7 +10,7 @@ export async function connectToMongoDB() {
         console.log('Conectado a MongoDb')
         return client
     } catch (error) {
-        console.log('Error al conectar con MONGODB 1');
+        console.log('Error al conectar con MONGODB');
         return null
     }
 }

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Poppins';
+}
+
+:root{
+    --color: #222
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+img{
+    width: 500px;
+}
+
+
+.container{
+    width: clamp(600px,70vw,1400px);
+}
+
+/* -------- HEADER -------- */
+
+
+header{
+    display: flex;
+    height: 90px;
+    background-color: #DFDFE2;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.header-title{
+    font-family: 'Playwrite';
+}
+
+.nav-list{
+    display: flex;
+    gap: 25px;
+}
+
+
+/* ------------- SECTION PRODUCTS ----------- */
+
+.section-products{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 120px;
+    justify-content: center;
+    gap: 60px;
+}
+
+.card{
+    box-shadow:
+    0px 0.3px 3.3px -38px rgba(0, 0, 0, 0.65),
+    0px 0.9px 11.2px -38px rgba(0, 0, 0, 0.387),
+    0px 4px 50px -38px rgba(0, 0, 0, 0.263);
+    cursor: pointer;
+    border: 1px solid transparent;
+    width: 350px;
+}
+
+.card:hover{
+    border: 1px solid #999;
+}
+
+
+.card-img{
+    width: 100%;
+}
+
+
+.card-title{
+    color: var(--color);
+    padding: 10px 20px 5px 20px;
+}
+
+.card-price{
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color);
+    padding: 10px 20px 20px 20px;
+}
