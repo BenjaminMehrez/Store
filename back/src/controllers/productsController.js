@@ -1,4 +1,5 @@
 import ProductsModel from "../models/productsModel.js"
+import Product from "../models/schemaProduct.js"
 
 class Products{
     static async getAll(req,res){
@@ -15,7 +16,17 @@ class Products{
               : res.status(200).json(products) 
     }
 
-    static
+    static async createOne(req,res){
+        const body = req.body
+        try {
+            const product = Product.parse(body)
+            const {products,error} = await ProductsModel.createOne(product)
+            if (products) return res.status(202).json(products)
+            
+        } catch (error) {
+            res.status(400).json({error: 'El producto no se agrego correctamente'})
+        }
+    }
 }
 
 
